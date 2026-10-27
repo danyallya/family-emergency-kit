@@ -1,0 +1,1 @@
+export const projectInfo = { slug:"family-emergency-kit", title:"Family Emergency Kit", summary:"An offline family plan for contacts, meeting places, supplies and accessible member copies.", scope:"emergency-plan", locale:"en", direction:"ltr", firstTask:"Create an offline checklist export that family members can review.", entity:"checklists" } as const;
