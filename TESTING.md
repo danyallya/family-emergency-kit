@@ -1,11 +1,15 @@
 # Test strategy
 
-- Unit: domain validation, date/order boundaries, idempotency and serialization.
-- Component: accessible labels, keyboard flow and loading/empty/error states.
-- Integration: PostgreSQL migrations, repository behavior and sync conflicts.
-- End-to-end: primary flow online, offline, refresh and reconnection.
-- Release gate: typecheck, lint, unit tests and production build via npm run verify.
+- Unit: checklist record shape, fixed item IDs, lifecycle transitions, chronology and export serialization.
+- Component: accessible labels, keyboard flow, saved/unsaved state, empty/error/deletion states.
+- Integration: PostgreSQL migrations, repository behavior and offline recovery.
+- End-to-end: create, review, download, reload and delete while offline.
+- Release gate: typecheck, lint, unit tests and production build via `npm run verify`.
+
+## Current automated coverage
+
+`npm run verify` checks type safety, unit tests, lint and a production build. Unit tests cover a non-identifying checklist, checked-state updates, chronological boundaries, review/reopen, export gating and strict JSON serialization. Browser IndexedDB persistence, keyboard/screen-reader behavior, download behavior, PostgreSQL migrations and offline reconnection are not automated yet.
 
 ## Manual acceptance
 
-Install the PWA, load once online, disconnect and confirm only public shell is available. Test keyboard, screen-reader labels, zoom, narrow screens, locale, database recovery and privacy-safe logs. The current starter test checks metadata only; product rules are not tested until TASK.md passes.
+Create and review the generic checklist, download and inspect the text, reload the page, delete the local record and verify the empty state. Check keyboard navigation and screen-reader labels. Do not use real names, contacts, addresses, meeting places, health details or document contents.
