@@ -18,4 +18,6 @@ The technical shell exists; the product workflow does not. Build the first safe,
 
 ## Status
 
-Not started. Use resilience/001-emergency-plan. After acceptance passes, update progress and set the next task.
+Complete for the generic offline starter slice: fixed household planning prompts are stored locally, can be discussed and marked reviewed, and can be exported as plain text. The record has no free-text, contact, location, meeting-place, medical or document fields. It is not safe for real sensitive emergency details because browser storage has no application-level protection or recovery.
+
+Next: EMERGENCY-PLAN-003 PostgreSQL migrations and repository tests for generic checklist metadata only. Keep contacts, precise locations and other sensitive household records gated until local protection, recovery and safe-sharing requirements are designed and reviewed.

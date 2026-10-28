@@ -4,8 +4,8 @@ Prioritize user risk and evidence over polish. Estimates are focused engineering
 
 ## P0 — safe foundation
 
-- [ ] EMERGENCY-PLAN-001 — Create an offline checklist export that family members can review.
-- [ ] EMERGENCY-PLAN-002 — Validate checklists and add empty/error/deletion states.
+- [x] EMERGENCY-PLAN-001 — Create a private generic offline checklist that family members can review and export.
+- [x] EMERGENCY-PLAN-002 — Validate checklists and add empty/error/deletion states.
 - [ ] EMERGENCY-PLAN-003 — Add PostgreSQL migrations and repository tests.
 - [ ] EMERGENCY-PLAN-004 — Specify offline conflicts, retry, duplicate-submit and recovery.
 
